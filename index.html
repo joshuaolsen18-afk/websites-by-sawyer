@@ -1,31 +1,60 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Websites by Sawyer — Simple Websites for Small Businesses</title><link rel="stylesheet" href="style.css"></head><body>
-<header><a href="index.html"><strong>Websites by Sawyer</strong></a><nav><a href="#examples">Examples</a><a href="#pricing">Pricing</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav></header>
-<section class="hero"><h1>Your business, but make it shine online ✨</h1><p>No confusing tech. No $2,000 agency quote. Just a warm, friendly, mobile-friendly site that feels like <em>you</em> — and tells customers who you are, what you do, and how to reach you.</p>
-<a class="btn" href="#examples">See example sites</a> <a class="btn light" href="#contact">Get a free website audit</a>
-<p class="small">Built for local shops, salons, cafes, and restaurants. If you can tell me about your business, I can build your site.</p></section>
+<title>Websites by Sawyer — Simple Websites for Small Businesses</title><link rel="stylesheet" href="style.css">
+<style>
+.topbar{position:sticky;top:0;z-index:10;background:#2b2118;color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-bottom:4px solid #ff8a3d}
+.topbar a{color:#fff;text-decoration:none}.topbar nav a{margin-left:16px;font-weight:600}
+.hero2{padding:64px 20px 56px;text-align:center;background:linear-gradient(160deg,#2b2118,#4a2c12 60%,#7a3b00);color:#fff}
+.hero2 h1{font-size:2.6rem;line-height:1.12;margin:0 0 14px}.hero2 p{font-size:1.2rem;max-width:680px;margin:0 auto 22px;color:#ffe9c7}
+.hero2 .btn{background:#ff8a3d;color:#1e1206!important;border:0}
+.section{padding:28px 0}.section h2{font-size:1.7rem;margin-bottom:6px}.lead{color:#6b5a4a;font-size:1.05rem;max-width:680px}
+.steps{counter-reset:step}.step{position:relative;padding-left:56px}.step b{position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:#ff8a3d;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.portfolio img{width:100%;height:180px;object-fit:cover;border-radius:16px 16px 0 0;display:block}
+.portfolio .card{padding:0;overflow:hidden}.portfolio .card>div{padding:20px}
+.faq details{background:#fff;border-radius:16px;padding:16px 20px;margin:12px 0;box-shadow:0 6px 18px rgba(43,33,24,.08)}
+.faq summary{font-weight:700;cursor:pointer}
+.check li{margin:8px 0}
+@media(max-width:600px){.hero2 h1{font-size:2rem}.topbar nav a{margin-left:10px}}
+</style></head><body>
+<header class="topbar"><a href="index.html"><strong>Websites by Sawyer</strong></a><nav><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav></header>
+<section class="hero2"><p style="letter-spacing:2px;font-weight:800;color:#ff8a3d;margin:0 0 10px">SMALL BUSINESS WEBSITES, DONE RIGHT</p>
+<h1>Your business deserves a website that looks like you mean it.</h1>
+<p>Not a template that looks like everyone else. Not a $2,000 agency quote. A clean, fast, mobile-first site — built around your photos, your menu or services, and your customers.</p>
+<a class="btn" href="#work">See example sites →</a> <a class="btn light" href="#contact" style="background:transparent;color:#fff!important;border:2px solid #fff">Get a free website audit</a>
+<p class="small" style="color:#e8dcc8">Simple sites, built in 1–3 days once we have your info. You approve a preview before anything goes live.</p></section>
 <main class="wrap">
-<h2 id="examples">Example sites — these are demos</h2><p>These are made-up businesses, built to show what your site could look like. Your version would use your photos, your menu or services, your hours, and your contact info.</p>
-<div class="grid">
-<div class="card"><span class="demo-tag">DEMO</span><h3>Maple Street Coffee</h3><p>A cozy coffee shop site: menu, hours, location, and a warm, easy-to-read layout.</p><a class="btn" href="demos/coffee.html">View coffee demo →</a></div>
-<div class="card"><span class="demo-tag">DEMO</span><h3>Sharp Cut Barber &amp; Salon</h3><p>Services, prices, stylists, and booking info — clear on a phone, which is where most customers look.</p><a class="btn" href="demos/salon.html">View salon demo →</a></div>
-<div class="card"><span class="demo-tag">DEMO</span><h3>The Corner Table</h3><p>A restaurant site: menu, hours, location, and a simple way to get in touch or reserve.</p><a class="btn" href="demos/restaurant.html">View restaurant demo →</a></div>
-</div>
+<section class="section" id="work"><h2>Recent work — example sites</h2><p class="lead">These are demo sites, built to show what your site could look like. Your version uses your photos, your wording, and your business — not a generic template.</p>
+<div class="grid portfolio">
+<div class="card"><img src="demos/coffee-photo.jpg" alt="Latte art coffees on a wooden table"><div><span class="demo-tag">DEMO</span><h3>Maple Street Coffee</h3><p>Coffee shop site: menu, hours, location, and a warm, personal feel — with real photos, not stock.</p><a class="btn" href="demos/coffee.html">View demo →</a></div></div>
+<div class="card"><img src="demos/barber-hero.jpg" alt="Barber trimming a beard"><div><span class="demo-tag">DEMO</span><h3>Sharp Cut Barber &amp; Salon</h3><p>Dark, sharp, confident: services, prices, and a photo hero that sells the shop before a word is read.</p><a class="btn" href="demos/salon.html">View demo →</a></div></div>
+<div class="card"><img src="demos/restaurant-hero.jpg" alt="Set outdoor restaurant table"><div><span class="demo-tag">DEMO</span><h3>The Corner Table</h3><p>Restaurant site: menu scrolling over a photo background, a gatherings section, and clear reservations info.</p><a class="btn" href="demos/restaurant.html">View demo →</a></div></div>
+</div></section>
 
-<h2 id="pricing">Simple, clear pricing</h2>
-<div class="card"><p class="price">$200 – $500</p><p>for a simple business website, depending on how many pages you need.</p><ul>
-<li>Home, About, Services / Menu, and Contact pages</li><li>Mobile-friendly — looks right on a phone</li><li>Your hours, location, and contact info front and center</li><li>Built in 1–3 days once I have your photos and info</li></ul><p><strong>How payment works:</strong> 50% deposit to start, the rest when your site goes live.</p><p class="small">Not included in a simple site: online booking systems, online stores / checkout, and custom apps. If you need those, ask — I'll tell you honestly if it's a bigger job.</p></div>
+<section class="section" id="services"><h2>What we build</h2><div class="grid">
+<div class="card"><h3>🌐 Simple business websites</h3><p>Home, About, Services / Menu, and Contact — everything a customer needs, nothing they don't. Mobile-first, so it looks right on a phone, where most customers actually look.</p></div>
+<div class="card"><h3>✨ Site refreshes &amp; fixes</h3><p>Already have a site that looks dated, is hard to read on a phone, or has old info? We clean it up, fix the readability, and make it feel current — without rebuilding everything from scratch.</p></div>
+<div class="card"><h3>🎯 Landing pages</h3><p>One focused page for one offer: a new service, a seasonal menu, a booking push. Clear headline, clear next step, no distractions.</p></div></div>
+<h3>Every simple site includes</h3><ul class="check"><li>✅ Mobile-friendly layout</li><li>✅ Your hours, location, and contact info front and center</li><li>✅ Your photos, used the way the demos above use theirs</li><li>✅ Clear calls to action — call, visit, book, or message</li><li>✅ Fast loading, no bloated plugins</li></ul><p class="small">Not included in a simple site: online booking systems, online stores / checkout, and custom apps. If you need those, ask — we'll tell you honestly if it's a bigger job, and what it would actually cost.</p></section>
 
-<h2 id="how">How it works</h2><div class="grid">
-<div class="card"><h3>1. Tell me about your business</h3><p>Send your business name, what you do, your hours, and a few photos if you have them.</p></div>
-<div class="card"><h3>2. I build a preview</h3><p>You see a draft first, in the style of the demos above, with your info in it.</p></div>
-<div class="card"><h3>3. We launch it</h3><p>You approve it, pay the balance, and your site goes live. Small changes after launch are no problem — just ask.</p></div></div>
+<section class="section" id="process"><h2>How it works — no surprises</h2><div class="grid steps">
+<div class="card step"><b>1</b><h3>Tell us about your business</h3><p>Business name, what you do, hours, and a few photos if you have them. No tech questionnaire.</p></div>
+<div class="card step"><b>2</b><h3>See a preview first</h3><p>We build a draft in the style of the demos above, with your info in it. You tell us what to change.</p></div>
+<div class="card step"><b>3</b><h3>We launch it</h3><p>You approve it, pay the balance, and it goes live. Small changes after launch are no problem — just ask.</p></div>
+<div class="card step"><b>4</b><h3>Stay current</h3><p>Menu change? New hours? New photo? Send it over and we'll update it. You don't have to learn a website builder to keep your site fresh.</p></div></div></section>
 
-<h2>Free website audit</h2><div class="card"><p>Already have a site? I'll look at it for free and tell you, in plain words, what's working, what's confusing customers, and what I'd fix first. No pressure to buy.</p></div>
+<section class="section" id="pricing"><h2>Simple, clear pricing</h2>
+<div class="card"><p class="price">$200 – $500</p><p>for a simple business website, depending on how many pages you need.</p><p><strong>Payment:</strong> 50% deposit to start, the rest when your site goes live. No hidden monthly fee for a simple site — hosting is free to start, and a custom domain later is usually $10–15/year if you want one.</p><p><strong>Timeline:</strong> 1–3 days for the build itself, once we have your photos and info. The waiting is usually on the client, not the build.</p></div>
+<div class="card"><h3>Free website audit</h3><p>Already have a site? We'll look at it for free and tell you, in plain words, what's working, what's confusing customers, and what we'd fix first. No pressure to buy.</p></div></section>
 
-<h2 id="contact">Get started</h2><div class="card">
+<section class="section faq" id="faq"><h2>Questions, answered straight</h2>
+<details><summary>How long does a simple site take?</summary><p>A one-page landing site can be a few hours. A 4–5 page business site is usually 1–3 days of build time, once we have your info. Revisions and domain setup can stretch the calendar to about a week — the build isn't the slow part, waiting on photos and wording is.</p></details>
+<details><summary>Do I need photos and a logo first?</summary><p>Photos help a lot — the demos above prove it. A logo is nice, but not required to start. If you don't have photos yet, tell us and we'll plan around it, or use clean placeholder sections until you do.</p></details>
+<details><summary>Will my site work on a phone?</summary><p>Yes — that's the priority. Most customers will find you on a phone, so every site is built mobile-first and checked on a phone screen before launch.</p></details>
+<details><summary>Can I update it later?</summary><p>Yes. Send us the new menu, hours, or photo and we'll update it. You don't have to learn a builder, and you don't have to start over.</p></details>
+</section>
+
+<section class="section" id="contact"><h2>Get started</h2><div class="card">
 <p><strong>Want a site like the demos above, but for your business?</strong></p>
-<p>Use the form below to tell me about your business. This form is a starting point — before this page is shared widely, Sawyer will add his business contact email so messages reach him directly. For now, use the form to draft your message, then send it to him by your usual message or email.</p>
+<p>Use the form below to tell us about your business. This form is a starting point — before this page is shared widely, Sawyer will add his business contact email so messages reach him directly. For now, use the form to draft your message, then send it to him by your usual message or email.</p>
 <form onsubmit="document.getElementById('thanks').style.display='block';return false;">
 <label>Your name</label><input required placeholder="Your name">
 <label>Your business</label><input required placeholder="Business name">
@@ -33,5 +62,5 @@
 <label>Message</label><textarea rows="4" placeholder="Tell me what you do, your hours, and anything you want on the site"></textarea>
 <button class="btn" type="submit">Prepare my message</button>
 <p id="thanks" style="display:none"><strong>Thanks!</strong> Copy your message above and send it to Sawyer. Once his business email is added here, this form will send directly.</p>
-</form><p class="small">Demo sites on this page are examples only — they are not real businesses, and their menus, prices, and hours are made up for demonstration.</p></div>
+</form><p class="small">Demo sites on this page are examples only — they are not real businesses, and their menus, prices, and hours are made up for demonstration.</p></div></section>
 </main><footer><p>Websites by Sawyer — Simple websites for small businesses.</p><p class="small">Example sites are demos. Pricing: $200–$500 for a simple site. 50% deposit to start.</p></footer></body></html>
