@@ -1,8 +1,39 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sharp Cut Barber & Salon — Demo</title><link rel="stylesheet" href="../style.css"></head><body>
-<header><a href="../index.html">← Websites by Sawyer</a><nav><a href="#services">Services</a><a href="#visit">Visit</a></nav></header>
-<section class="hero"><span class="demo-tag">DEMO SITE — NOT A REAL BUSINESS</span><h1>Sharp Cut Barber &amp; Salon</h1><p>Clean cuts, color, and styles that fit you. This is an example of a simple salon website.</p><a class="btn" href="#services">See services &amp; prices</a></section>
-<main class="wrap"><h2 id="services">Services — demo prices</h2>
-<div class="menu-item"><span>Haircut</span><strong>$25+</strong></div><div class="menu-item"><span>Beard Trim</span><strong>$15</strong></div><div class="menu-item"><span>Color</span><strong>$60+</strong></div><div class="menu-item"><span>Style &amp; Finish</span><strong>$35</strong></div><div class="menu-item"><span>Kids Cut</span><strong>$18</strong></div>
-<h2 id="visit">Visit us — demo info</h2><div class="card"><p><strong>Hours (example):</strong> Tue–Sat 9am–6pm<br><strong>Location (example):</strong> 45 Main Street<br><strong>Booking:</strong> Your phone, booking link, or walk-in info would go here on a real site.</p></div>
-<p><a href="../index.html">← Back to Websites by Sawyer — want a site like this for your business?</a></p></main><footer><p>Sharp Cut Barber &amp; Salon — demo site built by Websites by Sawyer.</p></footer></body></html>
+<title>Sharp Cut Barber &amp; Salon — Demo</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;color:#f2ede6;background:#121110;line-height:1.6}
+a{color:#f5b942}header{padding:16px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+header a{color:#fff;text-decoration:none}nav a{margin-left:16px;font-weight:600;font-family:system-ui,sans-serif;font-size:.95rem}
+.hero{padding:90px 20px 80px;text-align:center;background:linear-gradient(rgba(18,17,16,.82),rgba(18,17,16,.55)),#2a211a}
+.hero h1{font-size:3rem;line-height:1.1;margin:0 0 10px}.hero p{font-size:1.2rem;color:#e8dcc8;max-width:620px;margin:0 auto 24px}
+.btn{display:inline-block;background:#f5b942;color:#121110!important;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:700;font-family:system-ui,sans-serif;margin:6px}
+.btn.dark{background:transparent;color:#fff!important;border:1px solid #fff}
+.wrap{max-width:900px;margin:0 auto;padding:36px 20px;text-align:center}
+.demo-tag{display:inline-block;background:#f5b942;color:#121110;padding:4px 12px;border-radius:999px;font-size:.85rem;font-weight:800;font-family:system-ui,sans-serif}
+.quote{border-left:3px solid #f5b942;padding-left:16px;font-style:italic;color:#e8dcc8;max-width:640px;margin:24px auto;text-align:left}
+.services{text-align:left;max-width:640px;margin:0 auto}.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid #333}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:20px}
+.tile{background:#2a211a;border-radius:12px;padding:36px 16px;font-family:system-ui,sans-serif}
+.tile span{font-size:2rem;display:block;margin-bottom:8px}
+.card{background:#1e1b18;border-radius:16px;padding:22px;margin:20px auto;max-width:640px}
+footer{background:#000;color:#bbb;text-align:center;padding:22px;font-family:system-ui,sans-serif}
+@media(max-width:600px){.hero h1{font-size:2.1rem}}
+</style></head><body>
+<header><a href="../index.html"><strong>Sharp Cut</strong></a><nav><a href="#about">About</a><a href="#services">Services</a><a href="#visit">Contact</a></nav></header>
+<section class="hero"><span class="demo-tag">DEMO SITE — NOT A REAL BUSINESS</span><h1>Sharp Cut<br>Barber &amp; Salon</h1><p>A retreat for the modern gentleman — and everyone who wants a clean, sharp cut.</p><a class="btn" href="#visit">Book an appointment</a> <a class="btn dark" href="#services">Our services</a></section>
+<main class="wrap">
+<h2 id="about">Best Barbershop in Town</h2>
+<p class="quote">"A real gentleman takes his time — and enjoys it."</p>
+<p>Sharp Cut is more than just a haircut — it's a retreat from the everyday. In our warm, old-school space, traditional craft meets modern style.</p>
+<p>Every visit is a break from the routine. Whether it's a precise haircut, professional beard care, or a classic hot-towel shave — we put quality, precision, and your comfort first.</p>
+<p>Welcome to your new favorite spot.</p>
+
+<h2>The Atmosphere</h2>
+<div class="grid"><div class="tile"><span>✂️</span>Sharp tools,<br>steady hands</div><div class="tile"><span>💈</span>Classic chairs,<br>modern cuts</div><div class="tile"><span>🪒</span>Hot-towel shaves,<br>done right</div><div class="tile"><span>☕</span>Sit back,<br>take your time</div></div>
+
+<h2 id="services">Services — demo prices</h2><div class="services">
+<div class="row"><span>Haircut</span><strong>$25+</strong></div><div class="row"><span>Beard Trim</span><strong>$15</strong></div><div class="row"><span>Color</span><strong>$60+</strong></div><div class="row"><span>Style &amp; Finish</span><strong>$35</strong></div><div class="row"><span>Kids Cut</span><strong>$18</strong></div></div>
+
+<div class="card" id="visit"><h2 style="margin-top:0">Visit us — demo info</h2><p><strong>Hours (example):</strong> Tue–Sat 9am–6pm<br><strong>Location (example):</strong> 45 Main Street<br><strong>Booking:</strong> Your phone or booking link would go here on a real site.</p></div>
+<p><a href="../index.html">← Back to Websites by Sawyer — want a site like this for your business?</a></p></main>
+<footer><p>Sharp Cut Barber &amp; Salon — demo site built by Websites by Sawyer. Layout inspired by the barbershop example you sent; text, prices, and business are demo-only, not copied from that shop.</p></footer></body></html>
