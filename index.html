@@ -3,7 +3,8 @@
 <style>
 body{background:linear-gradient(rgba(8,18,38,.58),rgba(8,18,38,.58)),url('media-generation-tech-no-ai-center-0-a5c169f2-6240-45ab-84ac-87f65680a8bb.webp') center/cover no-repeat fixed}
 .wrap{background:transparent}
-.topbar{position:sticky;top:0;z-index:10;background:#2b2118;color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-bottom:4px solid #ff8a3d}
+.topbar{position:sticky;top:0;z-index:10;background:#2b2118;color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-bottom:4px solid #ff8a3d;transition:transform .3s ease}
+.topbar.hidden{transform:translateY(-110%)}
 .topbar a{color:#fff;text-decoration:none}.topbar nav a{margin-left:16px;font-weight:600}
 .hero2{padding:64px 20px 56px;text-align:center;background:linear-gradient(rgba(20,12,6,.62),rgba(20,12,6,.45)),url('media-generation-hero-breaking-chains-0-549e91f1-b233-4c0a-8089-f5f52565ee02.webp') center/cover no-repeat;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.7)}
 .hero2 h1{font-size:2.6rem;line-height:1.12;margin:0 0 14px}.hero2 p{font-size:1.2rem;max-width:680px;margin:0 auto 22px;color:#ffe9c7}
@@ -73,4 +74,13 @@ body{background:linear-gradient(rgba(8,18,38,.58),rgba(8,18,38,.58)),url('media-
 <label>Message</label><textarea name="message" rows="4" placeholder="Tell me what you do, your hours, and anything you want on the site"></textarea>
 <button class="btn" type="submit">Send my message</button>
 </form><p class="small">Demo sites on this page are examples only — they are not real businesses, and their menus, prices, and hours are made up for demonstration.</p></div></section>
-</main><footer><p>Websites by Sawyer — Simple websites for small businesses.</p><p class="small">Example sites are demos. Pricing: $200–$500 for a simple site. 50% deposit to start.</p></footer></body></html>
+</main><script>
+let lastY = window.scrollY;
+const bar = document.querySelector('.topbar');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  if (y > lastY && y > 120) bar.classList.add('hidden');
+  else bar.classList.remove('hidden');
+  lastY = y;
+}, {passive: true});
+</script><footer><p>Websites by Sawyer — Simple websites for small businesses.</p><p class="small">Example sites are demos. Pricing: $200–$500 for a simple site. 50% deposit to start.</p></footer></body></html>
