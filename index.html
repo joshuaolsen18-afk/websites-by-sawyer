@@ -61,13 +61,16 @@ body{background:linear-gradient(rgba(8,18,38,.58),rgba(8,18,38,.58)),url('media-
 
 <section class="section" id="contact"><h2>Get started</h2><div class="card">
 <p><strong>Want a site like the demos above, but for your business?</strong></p>
-<p>Use the form below to tell us about your business. This form is a starting point — before this page is shared widely, Sawyer will add his business contact email so messages reach him directly. For now, use the form to draft your message, then send it to him by your usual message or email.</p>
-<form onsubmit="document.getElementById('thanks').style.display='block';return false;">
-<label>Your name</label><input required placeholder="Your name">
-<label>Your business</label><input required placeholder="Business name">
-<label>What do you need?</label><select><option>A brand new simple website</option><option>A free audit of my current site</option><option>Fixes / updates to my current site</option></select>
-<label>Message</label><textarea rows="4" placeholder="Tell me what you do, your hours, and anything you want on the site"></textarea>
-<button class="btn" type="submit">Prepare my message</button>
-<p id="thanks" style="display:none"><strong>Thanks!</strong> Copy your message above and send it to Sawyer. Once his business email is added here, this form will send directly.</p>
+<p>Email Sawyer directly at <a href="mailto:sawyerwebsites@gmail.com">sawyerwebsites@gmail.com</a> — or use the form below and it will land in that inbox.</p>
+<form action="https://formsubmit.co/sawyerwebsites@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Websites by Sawyer enquiry">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<label>Your name</label><input name="name" required placeholder="Your name">
+<label>Your email</label><input name="email" type="email" required placeholder="you@example.com">
+<label>Your business</label><input name="business" required placeholder="Business name">
+<label>What do you need?</label><select name="need"><option>A brand new simple website</option><option>A free audit of my current site</option><option>Fixes / updates to my current site</option></select>
+<label>Message</label><textarea name="message" rows="4" placeholder="Tell me what you do, your hours, and anything you want on the site"></textarea>
+<button class="btn" type="submit">Send my message</button>
 </form><p class="small">Demo sites on this page are examples only — they are not real businesses, and their menus, prices, and hours are made up for demonstration.</p></div></section>
 </main><footer><p>Websites by Sawyer — Simple websites for small businesses.</p><p class="small">Example sites are demos. Pricing: $200–$500 for a simple site. 50% deposit to start.</p></footer></body></html>
